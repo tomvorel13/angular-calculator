@@ -1,0 +1,19 @@
+<div class="app">
+  <h1>CALCULATOR.</h1>
+  <div class="inputs">
+    <input class="input" [(ngModel)]="num1" type="number" placeholder="Enter a valid number">
+    <input class="input" [(ngModel)]="num2" type="number" placeholder="Enter a valid number">
+  </div>
+  <div class="operators">
+    <button class="btn btn-operator" (click)="add(num1, num2)">+</button>
+    <button class="btn btn-operator" (click)="subtract(num1, num2)">−</button>
+    <button class="btn btn-operator" (click)="multiply(num1, num2)">×</button>
+    <button class="btn btn-operator" (click)="divison(num1, num2)">÷</button>
+  </div>
+
+  <button class="btn btn-clear" (click)="clear()">Clear</button>
+  <div class="result" *ngIf="result">
+    <h2>Result:
+      <br> <span id="res">{{result}}</span></h2>
+  </div>
+</div>

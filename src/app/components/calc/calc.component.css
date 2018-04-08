@@ -1,0 +1,88 @@
+.app {
+  width: 400px;
+  margin: 0 auto;
+  background-color: #f3f3f3;
+  padding: 2em 4em;
+  border: 2px solid #00b0ff;
+  border-radius: 5%;
+}
+
+h1 {
+  font-size: 50px;
+  color: #00b0ff;
+}
+
+.operators {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.inputs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input {
+  width: 45%;
+  display: inline-block;
+  height: 50px;
+  padding: 0;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid grey;
+  font-size: 16px;
+}
+
+.btn:focus,
+.input:focus {
+  outline: none;
+  border-color: #00b0ff;
+}
+
+.btn {
+  padding: 3px 10px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #00b0ff;
+  color: white;
+}
+
+.btn-operator {
+  /* padding: 10px; */
+  border-radius: 50%;
+  border: none;
+}
+
+.btn-clear {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 10px 0;
+  border-radius: 10px;
+}
+
+.result {
+  width: 100%;
+  background-color: #0091ea;
+  color: white;
+  padding: 20px 0;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+#res {
+  font-size: 65px !important;
+}
+
+@media screen and (max-width: 400px) {
+  .input {
+    width: 100%;
+  }
+
+  .inputs {
+    flex-direction: column;
+  }
+}
